@@ -2,31 +2,39 @@
 
 # This is a simple CSV file reader that can be used to read CSV files and convert them into a series of json files, with the CHIP-OO07 format
 
-# The CSV file must have the following format:
+# How to Use:
 
-# 1. The first line must be the header, with the following columns:
+## - You must have python version > 2.8.0 installed
 
-# - "Serial Number": the id of the NTF
+## - Change the name 'test (2).csv' to the csv file you will be using and ensure it is in the same directory as the read.py script
 
-# - "File Name": the name of the NFT
+# How to Run:
 
-# - "UUID" : the unique id of the NFT
+## - Open a terminal and navigate to the directory where the read.py script is located
 
-# - "Gender": the gender of the NFT
+## - Run the command: python read.py
 
-# - "Description": the description of the NFT
+## 1. The CSV file must have the following format:
 
-# - "Image": the image of the NFT
+### - "Serial Number": the id of the NTF
 
-# - "Attributes": the attributes of the NFT
+### - "File Name": the name of the NFT
 
-## All in this particular order
+### - "Gender": the gender of the NFT
 
-# 2. Each line within the csv file must have its own unique values for each of these parameters , and cannot repeat
+### - "Description": the description of the NFT
 
-# 3. For the intent of further changes to the values in the csv file, the script should be modified as follows:
+### - "Image": the image of the NFT
 
-# - The index of each header row must match its corresponding generator within the script. That is to say that the first header must match index [0] in the script, and the second must match index[1] and so on
+### - "Attributes": the attributes of the NFT
+
+### All in this particular order
+
+## 2. Each line within the csv file must have its own unique values for each of these parameters , and cannot repeat
+
+## 3. For the intent of further changes to the values in the csv file, the script should be modified as follows:
+
+## - The index of each header row must match its corresponding generator within the script. That is to say that the first header must match index [0] in the script, and the second must match index[1] and so on
 
 ```
 
@@ -45,9 +53,9 @@ def create_json_file(data):
 
 ```
 
-# 4. Upon running the script, any arbitrary commas and values within the CSV file will be removed, and an SHA key will be assigned to each row of values , for easier identification
+## 4. Upon running the script, any arbitrary commas and values within the CSV file will be removed, and an SHA key will be assigned to each row of values , for easier identification
 
-# 5. The script will create a folder called "nft_jsons" in the same directory as the script, and will place all the generated json files in there
+## 5. The script will create a folder called "nft_jsons" in the same directory as the script, and will place all the generated json files in there
 
 ## The test csv file for esuring the script runs is inluded in the directory
 
