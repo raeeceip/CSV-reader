@@ -13,6 +13,7 @@
 ## - Open a terminal and navigate to the directory where the read.py script is located
 
 ## - Run the command: python read.py
+## - Run python pip install requirements.txt 
 
 ## 1. The CSV file must have the following format:
 
